@@ -1,0 +1,40 @@
+<mujoco model="robot_arm_niryo">
+    <asset>
+        <mesh name="base_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/base_link.stl"/>
+        <mesh name="shoulder_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/shoulder_link.stl"/>
+        <mesh name="arm_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/arm_link.stl"/>
+        <mesh name="elbow_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/elbow_link.stl"/>
+        <mesh name="forearm_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/forearm_link.stl"/>
+        <mesh name="wrist_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/wrist_link.stl"/>
+        <mesh name="hand_mesh" file="/home/xz2723/mujoco-ur5-model/niryo_one/meshes/v2/stl/hand_link.stl"/>
+    </asset>
+    <worldbody>
+        <body name="base" pos="0 0 0">
+            <geom type="mesh" mesh="base_mesh" rgba="1 0 0 1"/>
+            <joint name="joint_1" type="hinge" axis="0 0 1" limited="true" range="-175 175"/>
+            <body name="shoulder" pos="0 0 0.103">
+                <geom type="mesh" mesh="shoulder_mesh" rgba="0 1 0 1"/>
+                <joint name="joint_2" type="hinge" axis="0 0 1" pos="0 0 0" limited="true" range="-90 36.5" />
+                <body name="arm" pos="0 0 0.080" >
+                    <geom type="mesh" mesh="arm_mesh" rgba="0 0 1 1"/>
+                    <joint name="joint_3" type="hinge" axis="0 0 1" pos="0.210 0 0" limited="true" range="-175 90"/>
+                    <body name="elbow" pos="0.210 0 0">
+                        <geom type="mesh" mesh="elbow_mesh" rgba="1 1 0 1"/>
+                        <joint name="joint_4" type="hinge" axis="0 1 0" pos="0.0415 0.030 0" limited="true" range="-175 175"/>
+                        <body name="forearm" pos="0.0415 0.030 0">
+                            <geom type="mesh" mesh="forearm_mesh" rgba="1 0 1 1"/>
+                            <joint name="joint_5" type="hinge" axis="0 0 1" pos="0 0 0.180" limited="true" range="-100 110"/>
+                            <body name="wrist" pos="0 0 0.180">
+                                <geom type="mesh" mesh="wrist_mesh" rgba="0 1 1 1"/>
+                                <joint name="joint_6" type="hinge" axis="0 0 1" pos="0.0164 -0.0055 0" limited="true" range="-147.6 147.6"/>
+                                <body name="hand" pos="0.0164 -0.0055 0">
+                                    <geom type="mesh" mesh="hand_mesh" rgba="0.5 0.5 0.5 1"/>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+</mujoco>

@@ -1,0 +1,9 @@
+<mujocoinclude>
+    <mesh name="base_link" file="stl_files/base_link.stl" />
+    <mesh name="shoulder_link" file="stl_files/shoulder_link.stl" />
+    <mesh name="arm_link" file="stl_files/arm_link.stl" />
+    <mesh name="elbow_link" file="stl_files/elbow_link.stl" />
+    <mesh name="forearm_link" file="stl_files/forearm_link.stl" />
+    <mesh name="wrist_link" file="stl_files/wrist_link.stl" />
+    <mesh name="hand_link" file="stl_files/hand_link.stl" />
+</mujocoinclude>

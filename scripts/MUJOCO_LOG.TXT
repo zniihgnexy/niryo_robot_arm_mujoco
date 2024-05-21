@@ -1,0 +1,45 @@
+Tue Feb 27 14:47:59 2024
+WARNING: mju_openResource: unknown file '../model/include/table_assets.xml'
+
+Tue Feb 27 14:48:16 2024
+WARNING: mju_openResource: unknown file 'model/model.xml'
+
+Tue Feb 27 14:49:00 2024
+WARNING: mju_openResource: unknown file '/home/xz2723/mujoco-ur5-model/model/include/table_assets.xml'
+
+Tue Feb 27 14:50:29 2024
+WARNING: mju_openResource: unknown file '/home/xz2723/mujoco-ur5-model/model//home/xz2723/mujoco-ur5-model/include/table_assets.xml'
+
+Tue Feb 27 14:50:45 2024
+WARNING: mju_openResource: unknown file '/home/xz2723/mujoco-ur5-model/model/include/table_assets.xml'
+
+Tue Mar  5 14:09:33 2024
+WARNING: mju_openResource: unknown file '<?xml version="1.0" ?><mujoco model="ridgeback_ur5_robotiq_two_finger_gripper">
+    <compiler angle="radian"/>
+    <size njmax="500" nconmax="100"/>
+
+    <asset>
+        <include file="include/table_assets.xml"/>
+        <include file="include/robot_assets.xml"/>
+    </asset>
+
+    <worldbody>
+        <geom name="tableTop" material="MatGnd" type="plane" pos="0. 0. -0.3168" size="3.3 3.3 0.5" rgba="1. 1. 1. 1" contype="1" conaffinity="1"/>
+        <include file="include/robot.xml"/>
+    </worldbody>
+
+    <include file="include/actuators.xml"/>
+</mujoco>'
+
+Tue Mar  5 15:06:39 2024
+WARNING: mju_openResource: unknown file 'path_to_your_ur5_model.xml'
+
+Tue Mar  5 16:17:23 2024
+WARNING: mju_openResource: unknown file 'path/to/your/mujoco/model/ridgeback_ur5_robotiq_two_finger_gripper.xml'
+
+Wed Mar  6 10:12:11 2024
+WARNING: mju_openResource: unknown file 'path/to/your/mujoco/model/ridgeback_ur5_robotiq_two_finger_gripper.xml'
+
+Mon May 20 17:23:38 2024
+WARNING: mju_openResource: unknown file '/home/xz2723/mujoco-ur5-model/niryo_one/model/niryo_arm_urdf.xml'
+
